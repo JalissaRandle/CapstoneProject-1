@@ -1,0 +1,31 @@
+[
+    {
+        "id": 1,
+        "showName": "Jersey Shore",
+        "showTime": 5,
+        "amPm": "PM",
+        "daysOfWeek": "Thurdsay",
+        "streaming": "Paramount Plus"
+    },
+    {
+        "id": 2,
+        "showName": "Teen Mom 2",
+        "showTime": 8,
+        "amPm": "PM",
+        "daysOfWeek": "Friday",
+        "streaming": "Paramount Plus"
+    },
+    {
+        "id": 3,
+        "showName": "Handy Manny",
+        "showTime": 8,
+        "amPm": "AM",
+        "daysOfWeek": "Tuesday",
+        "streaming": "Disney Plus"
+    }
+
+
+
+
+
+]

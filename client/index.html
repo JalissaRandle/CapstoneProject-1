@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capstone Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+    <h2 > TV Tracking App</h2>
+    <ul >
+        <li><a href="/client/index.html">Home</a></li>
+        <li><a href="https://www.themoviedb.org/movie">Movies</a></li>
+        <li><a href="https://www.themoviedb.org/tv">Tv Shows</a></li>
+        <li><a href="/ulButtons/recomend.html">Recomendations</a></li>
+        <li><a href="/ulButtons/Account.html">Your account</a></li>
+        <li><a href="/ulButtons/logOff.html">Log Off</a></li>
+        
+
+    </ul>
+    <br><br><br>
+
+    <form>
+        <input type="text"  id ="showName" placeholder="Show title">
+        <br>
+        <input type="text" id="showTime" placeholder="Time aired">
+        <br>
+        <input type="text" placeholder="AM or PM" id="amPm"> 
+        <!-- <select name="amPm" id="AmPm">
+                <option value="am">AM</option>
+                <option value="pm">PM</option>
+            </select> -->
+        <br>
+        <input type="text" placeholder="What day of the week it's aired on?" id="daysOfWeek">
+        <!-- <label for="Days of the week:">What day does the show air?</label>
+            <select name="daysOfWeek" id="daysOfWeek">
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+                <option value="Sunday">Sunday</option>
+            </select> -->
+        <br>
+        <input type="text" id="streaming"placeholder="What streaming service/channel is it watched on?">
+        <br>
+    </form>
+    
+    <button id="submit">Add Show</button>
+        <h1>Your schedule </h1>
+    <section id="schedule-container"></section>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+    </body>
+</html>
