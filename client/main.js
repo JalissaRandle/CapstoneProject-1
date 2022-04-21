@@ -51,6 +51,7 @@ function createScheduleCard(schedule) {
     <p class="schedule-name">${schedule.daysOfWeek}</p>
     <p class="schedule-name">${schedule.streaming}</p>
     <button onclick="updateSchedule(${schedule.id}, 'plus')">+1 hour</button>
+    <button onclick="updateSchedule(${schedule.id}, 'minus')">-1 hour</button>
     <button onclick="deleteSchedule(${schedule.id})">delete</button>
     `
     scheduleContainer.appendChild(scheduleDisplay);
@@ -64,6 +65,14 @@ function displaySchedule(arr) {
     }
 };
 
+function ClearFields() {
+    document.getElementById("showName").value = "",
+    document.getElementById("showTime").value = "",
+    document.getElementById("amPm").value = "",
+    document.getElementById("daysOfWeek").value = "",
+    document.getElementById("streaming").value = ""
+   
+};
 submit.addEventListener('click', submitHandler);
 
 getSchedule();

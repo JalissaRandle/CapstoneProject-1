@@ -37,8 +37,11 @@ module.exports = {
     
         let index = schedule.findIndex(schedule => schedule.id === +id)
     
-         if (type === 'plus'){
+         if (type === 'plus') {
             schedule[index].showTime+= 1
+            res.status(200).send(schedule)
+        }else if (type === "minus") {
+            schedule[index].showTime-= 1 
             res.status(200).send(schedule)
         }else {
             res.status(400)
